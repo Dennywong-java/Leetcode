@@ -10,7 +10,7 @@ public class LC151ReverseWordsinaString {
             if (c != ' ') {
                 // 单词中的字母/数字
                 sb.append(c);
-            } else if (!sb.isEmpty() && sb.charAt(sb.length() - 1) != ' ') {
+            } else if (sb.charAt(sb.length() - 1) != ' ') {
                 // 单词之间保留一个空格
                 sb.append(' ');
             }
